@@ -1,0 +1,11 @@
+package com.estudiante.spring.app.Services;
+
+import java.util.UUID;
+
+public class IdUnicoServiceImpl implements IdUnicoService {
+
+    @Override
+    public String generarIdUnico() {
+        return UUID.randomUUID().toString();
+    }
+}
